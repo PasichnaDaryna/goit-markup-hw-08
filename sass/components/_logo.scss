@@ -1,0 +1,39 @@
+// $basic-font: Roboto, sans-serif;
+// $logo-font: Raleway, sans-serif;
+
+// $bg-color: #ffffff;
+// $text-color: #757575;
+// $headerlink-color: #212121;
+// $accent-color: #2196f3;
+// $footerbg_color: #2f303a;
+
+.logo {
+  color: $accent-color;
+  font-family: $logo-font, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  width: 153px;
+  height: 1.19;
+  margin-bottom: 25px;
+}
+
+.studio {
+  color: $headerlink-color;
+}
+
+// footer
+
+.logo-address {
+  margin-top: 45px;
+  margin-bottom: 28px;
+}
+
+.logo-link {
+  margin-bottom: 8px;
+}
+
+.studio-white {
+  color: $bg-color;
+}

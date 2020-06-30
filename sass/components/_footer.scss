@@ -1,0 +1,167 @@
+footer {
+  background-color: $footerbg-color;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.address {
+  display: block;
+  color: $bg-color;
+  font-size: 14px;
+  font-style: normal;
+  margin-bottom: 9px;
+}
+
+.tel-email {
+  display: block;
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+  font-style: normal;
+  margin-bottom: 9px;
+}
+
+.footer-social {
+  margin-top: 56px;
+}
+
+.social-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+
+  & .social-item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.footer-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.social-option {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  fill: $bg-color;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: $bg-color;
+    border-radius: 50%;
+    background-color: $accent-color;
+  }
+
+  &:focus {
+    color: $bg-color;
+    border-radius: 50%;
+    background-color: $accent-color;
+  }
+}
+
+.footer-svg {
+  --color5: $bg-color;
+}
+
+// #3div
+
+.footer-subscribe {
+  margin-top: 57px;
+
+  .button-join {
+    box-sizing: border-box;
+    // justify-content: center;
+
+    background: $accent-color;
+    color: $bg-color;
+    font-weight: 900;
+    line-height: 1.8;
+    font-size: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 62px 10px 29px;
+    border: 1px solid transparent;
+    display: inline-block;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.join {
+  display: block;
+  color: $bg-color;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 21px;
+}
+
+.join-form {
+  display: flex;
+}
+
+.email-footer {
+  box-sizing: border-box;
+  background-color: $footerbg-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-right: 12px;
+  padding: 12px 18px;
+  display: block;
+  width: 358px;
+  height: 50px;
+}
+
+.join-svg {
+  margin-left: 10px;
+}
+
+.line {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 18px;
+}
+
+.copyright {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.4);
+  border-top-width: 3px;
+  margin-bottom: 0;
+  padding-bottom: 21px;
+}

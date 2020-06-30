@@ -1,0 +1,60 @@
+// contacts
+
+.contacts {
+  display: inline-flex;
+  margin-left: auto;
+  align-items: center;
+
+  .header-contact + .header-contact {
+    margin-left: 50px;
+  }
+}
+.break {
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.contact-link {
+  display: block;
+  color: $text-color;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+  list-style: none;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  &:hover,
+  &:focus .contact-email {
+    --color4: $accent-color;
+  }
+
+  &:hover,
+  &:focus .phone-number {
+    --color4: $accent-color;
+  }
+}
+
+.header-contact {
+  display: flex;
+}
+
+.contact-email {
+  display: inline-block;
+  width: 16px;
+  height: 11px;
+  margin-right: 10px;
+  fill: $accent-color;
+}
+
+.phone-number {
+  display: inline-block;
+  width: 10px;
+  height: 14px;
+  margin-right: 10px;
+  fill: $accent-color;
+}
