@@ -5,6 +5,12 @@
   margin-bottom: 50px;
 }
 
+.section-team {
+  background: $section-team;
+  padding-left: auto;
+  padding-right: auto;
+}
+
 .team-list {
   display: flex;
   flex-wrap: nowrap;

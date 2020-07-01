@@ -95,26 +95,27 @@ footer {
 
 .footer-subscribe {
   margin-top: 57px;
+}
 
-  .button-join {
-    box-sizing: border-box;
-    // justify-content: center;
-
-    background: $accent-color;
-    color: $bg-color;
-    font-weight: 900;
-    line-height: 1.8;
-    font-size: 16px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    padding: 10px 62px 10px 29px;
-    border: 1px solid transparent;
-    display: inline-block;
-    height: 50px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-  }
+.button-join {
+  display: flex;
+  align-items: center;
+  width: 210px;
+  height: 50px;
+  margin-left: 12px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  color: $bg-color;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  overflow: hidden;
+  border-style: none;
+  cursor: pointer;
 }
 
 .join {
@@ -130,23 +131,21 @@ footer {
 }
 
 .email-footer {
-  box-sizing: border-box;
-  background-color: $footerbg-color;
+  display: inline-block;
+  min-width: 310px;
+  height: 50px;
+  padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  font-weight: 400;
-  text-align: left;
-  letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  margin-right: 12px;
-  padding: 12px 18px;
-  display: block;
-  width: 358px;
-  height: 50px;
+  color: $bg-color;
+  background-color: $footerbg-color;
+  outline: none;
 }
 
 .join-svg {
   margin-left: 10px;
+  fill: #fff;
 }
 
 .line {

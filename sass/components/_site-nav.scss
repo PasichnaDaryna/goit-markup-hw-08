@@ -27,6 +27,11 @@
   padding-top: 32px;
   padding-bottom: 32px;
   position: relative;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .current {

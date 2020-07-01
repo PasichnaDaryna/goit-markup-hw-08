@@ -393,6 +393,10 @@ h3 {
   position: relative;
 }
 
+.nav-option:hover, .nav-option:focus {
+  color: #2196f3;
+}
+
 .current {
   color: #2196f3;
   position: relative;
@@ -519,14 +523,13 @@ h3 {
   font-size: 16px;
   line-height: 1.87;
   font-weight: bold;
+  outline: none;
 }
 
-.adv-list {
+.advantage-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   text-decoration: none;
   list-style: none;
   -webkit-box-pack: center;
@@ -649,6 +652,12 @@ h3 {
       align-content: center;
   text-align: center;
   margin-bottom: 50px;
+}
+
+.section-team {
+  background: #f5f4fa;
+  padding-left: auto;
+  padding-right: auto;
 }
 
 .team-list {
@@ -925,28 +934,30 @@ footer {
   margin-top: 57px;
 }
 
-.footer-subscribe .button-join {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background: #2196f3;
-  color: #ffffff;
-  font-weight: 900;
-  line-height: 1.8;
-  font-size: 16px;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  padding: 10px 62px 10px 29px;
-  border: 1px solid transparent;
-  display: inline-block;
-  height: 50px;
+.button-join {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 210px;
+  height: 50px;
+  margin-left: 12px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #2196f3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  overflow: hidden;
+  border-style: none;
+  cursor: pointer;
 }
 
 .join {
@@ -964,25 +975,22 @@ footer {
 }
 
 .email-footer {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-color: #2f303a;
+  display: inline-block;
+  min-width: 310px;
+  height: 50px;
+  padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  font-weight: 400;
-  text-align: left;
-  letter-spacing: 0.06em;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  margin-right: 12px;
-  padding: 12px 18px;
-  display: block;
-  width: 358px;
-  height: 50px;
+  color: #ffffff;
+  background-color: #2f303a;
+  outline: none;
 }
 
 .join-svg {
   margin-left: 10px;
+  fill: #fff;
 }
 
 .line {
