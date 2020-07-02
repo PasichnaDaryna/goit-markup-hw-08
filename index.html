@@ -30,6 +30,23 @@
         </span>
       </a>
 
+      <!-- adaptive -->
+
+            <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+              <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                <use class="icon-cross" href="./img/symbol-defs.svg#icon-closemob"></use>
+                <use class="icon-menu" href="./img/symbol-defs.svg#icon-menumob"></use>
+              </svg>
+            </button>
+            
+            <div class="menu-container" id="menu-container" data-menu>
+              <ul class="navigation"></ul>
+              <ul class="contacts"></ul>
+            </div>
+            </nav>
+            </div>
+            <!-- adaptive -->
+
       <ul class="site-nav">
         <li class="item-nav"><a class="nav-option current" href="./index.html">Студия</a></li>
         <li class="item-nav"><a class="nav-option " href="./portfolio.html">Портфолио</a></li>
@@ -532,13 +549,10 @@
 
 
   </footer>
+  <script src="./js/menu.js"></script>
 
-  <script src="./js/modal.js">
-
-
-
-
-  </script>
+  <script src="./js/modal.js"></script>
+  
 </body>
 
 </html>
