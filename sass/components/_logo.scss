@@ -6,6 +6,24 @@
 // $headerlink-color: #212121;
 // $accent-color: #2196f3;
 // $footerbg_color: #2f303a;
+.logo-link {
+  display: inline-block;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 16px;
+    margin-top: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 26px;
+    margin-top: 26px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 26px;
+    margin-top: 26px;
+  }
+}
 
 .logo {
   display: block;
@@ -15,21 +33,7 @@
   font-weight: bold;
   font-size: 24px;
   line-height: 1.19;
-  margin-bottom: 25px;
-
-  @media screen and (min-width: 480px) {
-    margin-bottom: 16px;
-    margin-top: 16px;
-  }
-
-  @media screen and (min-width: 768px) {
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 26px;
-    margin-top: 26px;
-    margin-left: 15px;
-  }
+  // margin-bottom: 25px;
 }
 
 .studio {
@@ -41,10 +45,6 @@
 .logo-address {
   margin-top: 45px;
   margin-bottom: 28px;
-}
-
-.logo-link {
-  margin-bottom: 8px;
 }
 
 .studio-white {

@@ -1,7 +1,8 @@
 .main-nav {
   display: flex;
   align-items: center;
-  position: relative;
+
+  justify-content: center;
 }
 
 .menu-container {
@@ -67,7 +68,7 @@
   position: relative;
 
   @media screen and (min-width: 480px) {
-    width: 480px;
+    // margin-bottom: 52px;
   }
 
   &:hover,
@@ -79,6 +80,10 @@
 .item-nav {
   @media screen and (min-width: 480px) {
     margin-bottom: 52px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
   }
 }
 
