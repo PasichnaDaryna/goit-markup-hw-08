@@ -26,7 +26,6 @@
   margin-left: auto;
 
   @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
     margin-top: 60px;
     align-items: center;
     display: flex;
@@ -52,6 +51,12 @@
 
 .header-contact {
   display: block;
+
+  @media screen and (max-width: 767px) {
+    &:first-child {
+      margin-bottom: 16px;
+    }
+  }
 }
 
 .contact-link {
@@ -79,13 +84,11 @@
 }
 
 .contact-email {
-  height: 11px;
   margin-right: 10px;
   fill: $accent-color;
 }
 
 .phone-number {
-  height: 14px;
   margin-right: 10px;
   fill: $accent-color;
 }

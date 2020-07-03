@@ -78,7 +78,7 @@
 }
 
 .item-nav {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 52px;
 
     &:last-child {
@@ -98,7 +98,7 @@
   &:after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -4px;
     right: 0;
     display: block;
     width: 100%;

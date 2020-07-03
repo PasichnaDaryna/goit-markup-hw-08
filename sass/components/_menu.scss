@@ -5,8 +5,14 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  outline: none;
 
-  @media screen and (min-width: 448px) {
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+
+  @media screen and (max-width: 767px) {
     position: absolute;
     top: 10px;
     right: 15px;
@@ -29,6 +35,23 @@
   display: none;
 }
 
+.menu-button:hover.icon-menu {
+  fill: $accent-color;
+}
+
+.for-burger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+}
+
 .menu-container {
   background-color: $bg-color;
   text-align: center;
@@ -44,6 +67,7 @@
     top: 100%;
     left: 0;
     width: 100%;
+    z-index: 999;
   }
 
   @media screen and (min-width: 768px) {
