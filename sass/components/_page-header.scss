@@ -1,3 +1,15 @@
 .header-content {
-  display: flex;
+  position: relative;
+  border-bottom: 1px solid $header-border;
+  min-height: 60px;
+  background-color: $bg-color;
+  border-bottom: 1px solid #ececec;
+}
+
+.navigation {
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    min-height: 80px;
+  }
 }

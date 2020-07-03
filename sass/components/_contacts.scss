@@ -1,12 +1,17 @@
 // contacts
 
 .contacts {
-  display: inline-flex;
-  margin-left: auto;
   align-items: center;
 
-  .header-contact + .header-contact {
-    margin-left: 50px;
+  @media screen and (min-width: 480px) {
+    align-items: center;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
 .break {
@@ -14,8 +19,12 @@
   list-style: none;
   text-decoration: none;
 }
-.contact-link {
+
+.header-contact {
   display: block;
+}
+
+.contact-link {
   color: $text-color;
   font-style: normal;
   font-weight: 500;
@@ -39,21 +48,17 @@
   }
 }
 
-.header-contact {
-  display: flex;
-}
-
 .contact-email {
-  display: inline-block;
-  width: 16px;
+  display: block;
+
   height: 11px;
   margin-right: 10px;
   fill: $accent-color;
 }
 
 .phone-number {
-  display: inline-block;
-  width: 10px;
+  display: block;
+
   height: 14px;
   margin-right: 10px;
   fill: $accent-color;

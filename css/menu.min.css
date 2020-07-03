@@ -1,0 +1,2 @@
+.menu-button{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;margin:0;padding:0;border:none;outline:none;background-color:transparent}@media screen and (min-width: 768px){.menu-button{display:none}}.menu-button .icon-cross{display:none}.menu-button.is-open .icon-cross{display:block}
+/*# sourceMappingURL=menu.min.css.map */

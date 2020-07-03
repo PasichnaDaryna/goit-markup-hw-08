@@ -1,32 +1,70 @@
 .main-nav {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
-.site-nav {
+.menu-container {
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    background-color: #fff;
+    border-top: 1px solid #ececec;
+  }
+}
+
+.navigation {
+  list-style: none;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.item-nav {
   font-family: $basic-font, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  list-style: none;
-  display: flex;
-  margin-left: 86px;
-}
 
-.item-nav {
-  margin-right: 50px;
-}
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
 
-.item-nav:last-child {
-  margin-right: 0;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .nav-option {
   color: $headerlink-color;
   display: inline-block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
   position: relative;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
 
   &:hover,
   &:focus {
@@ -34,6 +72,16 @@
   }
 }
 
+.item-nav {
+  @media screen and (min-width: 480px) {
+    margin-bottom: 52px;
+  }
+}
+
+.navigation {
+  @media screen and (min-width: 480px) {
+  }
+}
 .current {
   color: $accent-color;
   position: relative;
