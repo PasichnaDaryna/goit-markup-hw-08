@@ -477,6 +477,12 @@ h3 {
   font-size: 14px;
 }
 
+@media screen and (min-width: 480px) {
+  .item-nav {
+    margin-right: 0px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .item-nav {
     margin-right: 50px;
