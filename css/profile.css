@@ -370,7 +370,11 @@ h3 {
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
-    width: 480px;
+    min-width: 480px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -387,7 +391,6 @@ h3 {
 }
 
 .header-content {
-  position: relative;
   border-bottom: 1px solid #ececec;
   min-height: 60px;
   background-color: #ffffff;
@@ -675,15 +678,11 @@ h3 {
   outline: none;
 }
 
-.menu-button:hover, .menu-button:focus {
-  fill: #2196f3;
-}
-
 @media screen and (max-width: 767px) {
   .menu-button {
     position: absolute;
-    top: 10px;
-    right: 15px;
+    top: 0;
+    right: 0;
   }
 }
 
@@ -726,13 +725,13 @@ h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    position: relative;
   }
 }
 
@@ -753,7 +752,7 @@ h3 {
     top: 100%;
     left: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 9999;
   }
 }
 
@@ -777,7 +776,6 @@ h3 {
 }
 
 .header-content {
-  position: relative;
   border-bottom: 1px solid #ececec;
   min-height: 60px;
   background-color: #ffffff;
