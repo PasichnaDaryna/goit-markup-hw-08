@@ -368,32 +368,37 @@ h3 {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .section {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
+
 .container {
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .container {
-    max-width: 480px;
+    max-width: 767px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    main-width: 768px;
+    max-width: 1199px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    min-width: 1200px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -454,7 +459,7 @@ h3 {
   list-style: none;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .navigation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -478,6 +483,7 @@ h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-left: 81px;
   }
 }
 
@@ -491,13 +497,6 @@ h3 {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-}
-
-.item-nav {
-  font-family: Roboto, sans-serif, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
 }
 
 @media screen and (min-width: 480px) {
@@ -516,6 +515,10 @@ h3 {
 }
 
 .nav-option {
+  font-family: Roboto, sans-serif, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
   color: #212121;
   display: inline-block;
   position: relative;
@@ -529,8 +532,21 @@ h3 {
   .item-nav {
     margin-bottom: 52px;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .item-nav {
+    margin-right: 50px;
+  }
+}
+
+.item-nav:last-child {
+  margin-bottom: 0px;
+}
+
+@media screen and (min-width: 768px) {
   .item-nav:last-child {
-    margin-bottom: 0px;
+    margin-right: 0px;
   }
 }
 
@@ -590,10 +606,13 @@ h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -622,6 +641,12 @@ h3 {
 @media screen and (max-width: 767px) {
   .header-contact:first-child {
     margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-contact {
+    margin-bottom: 10px;
   }
 }
 
@@ -893,6 +918,16 @@ h3 {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .advantage-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .adv-item {
   display: block;
   -webkit-box-sizing: border-box;
@@ -906,6 +941,17 @@ h3 {
 @media screen and (max-width: 767px) {
   .adv-item {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .adv-item {
+    -ms-flex-preferred-size: calc((100%-60px) / 2);
+        flex-basis: calc((100%-60px) / 2);
+    margin-bottom: 30px;
+  }
+  .adv-item:nth-child(2n + 1) {
+    margin-right: 30px;
   }
 }
 
@@ -976,6 +1022,12 @@ h3 {
 }
 
 @media screen and (max-width: 767px) {
+  .our-work {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1199px) {
   .our-work {
     display: none;
   }
@@ -1362,6 +1414,18 @@ h3 {
   /* scale(1) */
 }
 
+@media screen and (max-width: 767px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    max-width: 450px;
+    width: 100%;
+  }
+}
+
 .form {
   margin: 0;
 }
@@ -1372,7 +1436,18 @@ h3 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 40px;
-  max-width: 448px;
+}
+
+@media screen and (max-width: 767px) {
+  .form-field {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-field {
+    max-width: 448px;
+  }
 }
 
 .close-button {

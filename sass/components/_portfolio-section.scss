@@ -96,7 +96,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    // width: calc((100% - 60px) / 3);
+    width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
   }
@@ -123,8 +123,8 @@
 
 .image-portfolio {
   display: block;
-  width: 370px;
-  height: 294px;
+  // width: 370px;
+  // height: 294px;
   box-sizing: border-box;
 }
 

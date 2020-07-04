@@ -24,7 +24,7 @@
 .navigation {
   list-style: none;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,6 +33,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
+    margin-left: 81px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -42,11 +43,6 @@
 }
 
 .item-nav {
-  font-family: $basic-font, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-
   @media screen and (min-width: 480px) {
     margin-right: 0px;
   }
@@ -61,13 +57,17 @@
 }
 
 .nav-option {
+  font-family: $basic-font, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
   color: $headerlink-color;
   display: inline-block;
   // padding-top: 32px;
   // padding-bottom: 32px;
   position: relative;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     // margin-bottom: 52px;
   }
 
@@ -80,17 +80,19 @@
 .item-nav {
   @media screen and (max-width: 767px) {
     margin-bottom: 52px;
+  }
 
-    &:last-child {
-      margin-bottom: 0px;
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
+  }
+  &:last-child {
+    margin-bottom: 0px;
+    @media screen and (min-width: 768px) {
+      margin-right: 0px;
     }
   }
 }
 
-.navigation {
-  @media screen and (min-width: 480px) {
-  }
-}
 .current {
   color: $accent-color;
   position: relative;
