@@ -2,6 +2,12 @@
 
 .section-hero {
   text-align: center;
+
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .overlay-image {
@@ -16,13 +22,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  // @media screen and (max-width: 767px) {
-  //   width: 100%;
-  // }
-
-  // @media screen and (min-width: 768px) {
-  //   height: 400px;
-  // }
 
   @media screen and (min-width: 1200px) {
     max-width: 1600px;
@@ -43,7 +42,8 @@
   @media screen and (max-width: 767px) {
     font-size: 26px;
     line-height: 1.61;
-    margin-top: 118px;
+
+    padding-top: 118px;
     margin-bottom: 30px;
   }
 
@@ -64,8 +64,7 @@
   display: inline-block;
   border: 1px solid transparent;
   border-radius: 6px;
-  // width: 200px;
-  // height: 50px;
+
   padding: 10px 32px;
   color: $bg-color;
   background: $accent-color;
@@ -75,5 +74,10 @@
   outline: none;
   @media screen and (max-width: 767px) {
     margin-bottom: 118px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 200px;
+    height: 50px;
   }
 }
