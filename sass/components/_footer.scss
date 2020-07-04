@@ -1,4 +1,4 @@
-footer {
+.footer {
   background-color: $footerbg-color;
 }
 
@@ -9,243 +9,236 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  
+  }
 
   @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
   }
-    }
+}
 
-  .logo-block {
-    @media screen and (max-width: 767px) {
-      display: block;
-      text-align: center;
-      margin-bottom: 60px;
-      margin-top: 0;
-    }
-  }
+.logo-block {
+  display: block;
 
-  .logo-click {
-    @media screen and (max-width: 767px) {
-      display: block;
-      text-align: center;
-    }
-  }
-
-  .web-studio {
-    @media screen and (max-width: 767px) {
-      display: block;
-      text-align: center;
-      margin-left: auto;
-      margin-left: auto;
-    }
-  }
-
-  .kyiv-address {
-    text-align: center;
-    display: block;
-    color: $bg-color;
-    font-size: 14px;
-    font-style: normal;
-    // margin-bottom: 8px;
-  }
-
-  .address-block {
-    @media screen and (max-width: 767px) {
-      margin-top: 20px;
-    }
-  }
-
-  .tel-email {
+  @media screen and (max-width: 767px) {
     display: block;
     text-align: center;
-    color: rgba(255, 255, 255, 0.4);
-    text-decoration: none;
-    font-style: normal;
-    margin-bottom: 8px;
+    margin-bottom: 60px;
+    margin-top: 0;
+  }
+}
+
+.logo-click {
+  @media screen and (max-width: 767px) {
+    display: block;
+    text-align: center;
+  }
+}
+
+.web-studio {
+  @media screen and (max-width: 767px) {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-left: auto;
+  }
+}
+
+.kyiv-address {
+  text-align: center;
+  display: block;
+  color: $bg-color;
+  font-size: 14px;
+  font-style: normal;
+  // margin-bottom: 8px;
+}
+
+.address-block {
+  @media screen and (max-width: 767px) {
+    margin-top: 20px;
+  }
+}
+
+.tel-email {
+  display: block;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+  font-style: normal;
+  margin-bottom: 8px;
+}
+
+.telefono {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 0;
+  }
+}
+
+.footer-social {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+}
+
+.social-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+
+  &:last-child {
+    margin-right: 0px;
   }
 
-  .telefono {
-    @media screen and (max-width: 767px) {
-      margin-bottom: 0;
-    }
-  
+  & .social-item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
 
-  .footer-social {
-    // margin-top: 56px;
+.footer-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    @media screen and (max-width: 767px) {
-      margin-bottom: 60px;
-    }
+  &:not(:last-child) {
+    margin-right: 10px;
   }
 
-  .social-list {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-   
-    &:last-child {
-      margin-right: 0px;
-    }
-
-    & .social-item:not(:last-child) {
-      margin-right: 10px;
-    }
-  }
-
-  .footer-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &:not(:last-child) {
-      margin-right: 10px;
-    }
-
-    &:hover,
-    &:focus {
-      background-color: $accent-color;
-      border-radius: 50%;
-      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  }
-
-  .social-option {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    fill: $bg-color;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover {
-      color: $bg-color;
-      border-radius: 50%;
-      background-color: $accent-color;
-    }
-
-    &:focus {
-      color: $bg-color;
-      border-radius: 50%;
-      background-color: $accent-color;
-    }
-  }
-
-  .footer-svg {
-    --color5: $bg-color;
-  }
-
-  // #3div
-
-  // .footer-subscribe {
-  //   @media screen and (max-width: 767px) {
-  //   }
-  // }
-
-  .button-join {
-    align-items: center;
-
-    padding: 10px 32px;
-    border-radius: 4px;
-    color: $bg-color;
+  &:hover,
+  &:focus {
     background-color: $accent-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    overflow: hidden;
-    border-style: none;
-    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
 
-    @media screen and (max-width: 767px) {
-      display: block;
-      min-width: 200px;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 10px 29px;
-    }
+.social-option {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  fill: $bg-color;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
 
-    @media screen and (min-width: 1200px) { display: flex;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: $bg-color;
+    border-radius: 50%;
+    background-color: $accent-color;
+  }
+
+  &:focus {
+    color: $bg-color;
+    border-radius: 50%;
+    background-color: $accent-color;
+  }
+}
+
+.footer-svg {
+  --color5: $bg-color;
+}
+
+.button-join {
+  align-items: center;
+
+  padding: 10px 32px;
+  border-radius: 4px;
+  color: $bg-color;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  overflow: hidden;
+  border-style: none;
+  cursor: pointer;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    min-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 29px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
     width: 210px;
     height: 50px;
     margin-left: 12px;
   }
+}
 
-  .join {
-    display: block;
-    color: $bg-color;
-    font-size: 14px;
-    text-transform: uppercase;
+.join {
+  display: block;
+  color: $bg-color;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.join-form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.email-footer {
+  display: inline-block;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: $bg-color;
+  background-color: $footerbg-color;
+  outline: none;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
     margin-bottom: 20px;
-    @media screen and (max-width: 767px) {
-      text-align: center;
-    }
   }
 
-  .join-form {
-    // display: flex;
-
-    @media screen and (min-width: 1200px) {
-      display: flex;
-    }
+  @media screen and (min-width: 1200px) {
+    min-width: 310px;
+    height: 50px;
   }
+}
 
-  .email-footer {
-    display: inline-block;
-    padding: 15px 16px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    color: $bg-color;
-    background-color: $footerbg-color;
-    outline: none;
-    @media screen and (max-width: 767px) {
-      min-width: 100%;
-      margin-bottom: 20px;
-    }
+.join-svg {
+  margin-left: 10px;
+  fill: #fff;
+}
 
-    @media screen and (min-width: 1200px) {
-      min-width: 310px;
-      height: 50px;
-    }
-  }
-
-  .join-svg {
-    margin-left: 10px;
-    fill: #fff;
-  }
-
-  .line {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    margin-bottom: 18px;
-  }
+.line {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 18px;
+}
 
 .copyright-div {
-
-@media screen and (max-width: 767px) {
-      display: none;
-    }
+  @media screen and (max-width: 767px) {
+    display: none;
   }
+}
 
-  .copyright-sign {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 2;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.4);
-    border-top-width: 3px;
-    margin-bottom: 0;
-    padding-bottom: 21px;
-  }
-  
+.copyright-sign {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.4);
+  border-top-width: 3px;
+  margin-bottom: 0;
+  padding-bottom: 21px;
+}
