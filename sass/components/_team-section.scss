@@ -124,7 +124,7 @@
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &.social-option .icon-social {
+  & .icon-social {
     fill: $social-color;
   }
 
@@ -135,8 +135,12 @@
     background-color: $accent-color;
   }
 
-  &:hover,
+  &:hover .icon-social {
+    fill: $bg-color;
+  }
+
   &:focus .icon-social {
-    --color5: $bg-color;
+    fill: $bg-color;
+    background-color: $accent-color;
   }
 }
