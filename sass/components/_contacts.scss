@@ -39,14 +39,16 @@
 
 .header-contact {
   display: block;
-}
-@media screen and (max-width: 767px) {
-  &:first-child {
-    margin-bottom: 16px;
+
+  @media screen and (max-width: 767px) {
+    &:first-child {
+      margin-bottom: 10px;
+    }
   }
 }
 
 .contact-link {
+  display: block;
   color: $text-color;
   font-style: normal;
   font-weight: 500;
@@ -60,22 +62,22 @@
   }
 
   &:hover,
-  &:focus .contact-email {
+  &:focus .contact-emailhead {
     --color4: $accent-color;
   }
 
   &:hover,
-  &:focus .phone-number {
+  &:focus .phone-numberhead {
     --color4: $accent-color;
   }
 }
 
-.contact-email {
+.contact-emailhead {
   margin-right: 10px;
   fill: $accent-color;
 }
 
-.phone-number {
+.phone-numberhead {
   margin-right: 10px;
   fill: $accent-color;
 }

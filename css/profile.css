@@ -506,6 +506,7 @@ h3 {
 @media screen and (max-width: 767px) {
   .item-nav {
     margin-right: 0px;
+    margin-bottom: 52px;
   }
 }
 
@@ -659,12 +660,13 @@ h3 {
 }
 
 @media screen and (max-width: 767px) {
-  :first-child {
-    margin-bottom: 16px;
+  .header-contact:first-child {
+    margin-bottom: 10px;
   }
 }
 
 .contact-link {
+  display: block;
   color: #757575;
   font-style: normal;
   font-weight: 500;
@@ -679,21 +681,21 @@ h3 {
 }
 
 .contact-link:hover,
-.contact-link:focus .contact-email {
+.contact-link:focus .contact-emailhead {
   --color4: $accent-color;
 }
 
 .contact-link:hover,
-.contact-link:focus .phone-number {
+.contact-link:focus .phone-numberhead {
   --color4: $accent-color;
 }
 
-.contact-email {
+.contact-emailhead {
   margin-right: 10px;
   fill: #2196f3;
 }
 
-.phone-number {
+.phone-numberhead {
   margin-right: 10px;
   fill: #2196f3;
 }
@@ -931,12 +933,13 @@ svg:focus .icon-cross {
 }
 
 @media screen and (max-width: 767px) {
-  :first-child {
-    margin-bottom: 16px;
+  .header-contact:first-child {
+    margin-bottom: 10px;
   }
 }
 
 .contact-link {
+  display: block;
   color: #757575;
   font-style: normal;
   font-weight: 500;
@@ -951,21 +954,21 @@ svg:focus .icon-cross {
 }
 
 .contact-link:hover,
-.contact-link:focus .contact-email {
+.contact-link:focus .contact-emailhead {
   --color4: $accent-color;
 }
 
 .contact-link:hover,
-.contact-link:focus .phone-number {
+.contact-link:focus .phone-numberhead {
   --color4: $accent-color;
 }
 
-.contact-email {
+.contact-emailhead {
   margin-right: 10px;
   fill: #2196f3;
 }
 
-.phone-number {
+.phone-numberhead {
   margin-right: 10px;
   fill: #2196f3;
 }
