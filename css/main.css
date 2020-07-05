@@ -333,8 +333,8 @@ h3 {
 
 @media screen and (min-width: 1200px) {
   .logo-link {
-    margin-bottom: 26px;
-    margin-top: 26px;
+    margin-bottom: 24px;
+    margin-top: 25px;
   }
 }
 
@@ -344,8 +344,20 @@ h3 {
   font-family: Raleway, sans-serif, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 1.19;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .studio {
@@ -526,19 +538,28 @@ h3 {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
+  line-height: 1.14;
   color: #212121;
   display: inline-block;
   position: relative;
 }
 
-.nav-option:hover, .nav-option:focus {
-  color: #2196f3;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .nav-option {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }
 
-@media screen and (max-width: 767px) {
-  .item-nav {
-    margin-bottom: 52px;
+@media screen and (min-width: 1200px) {
+  .nav-option {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
+}
+
+.nav-option:hover, .nav-option:focus {
+  color: #2196f3;
 }
 
 @media screen and (min-width: 768px) {
@@ -620,6 +641,8 @@ h3 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 21px;
+    margin-bottom: 21px;
   }
 }
 
@@ -632,6 +655,8 @@ h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
   .contacts .header-contact + .header-contact {
     margin-left: 50px;
@@ -649,14 +674,8 @@ h3 {
 }
 
 @media screen and (max-width: 767px) {
-  .header-contact:first-child {
+  :first-child {
     margin-bottom: 16px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .header-contact {
-    margin-bottom: 10px;
   }
 }
 
@@ -1188,18 +1207,13 @@ svg:focus .icon-cross {
 .member-name {
   text-align: center;
   margin-top: 30px;
-}
-
-@media screen and (max-width: 767px) {
-  .member-name {
-    margin-bottom: 10px;
-  }
+  margin-bottom: 10px;
 }
 
 .position {
   text-align: center;
   font-size: 16px;
-  color: #757575;
+  color: #212121;
   margin-bottom: 16px;
 }
 

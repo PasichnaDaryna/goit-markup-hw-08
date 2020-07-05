@@ -61,14 +61,24 @@
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
+  line-height: 1.14;
   color: $headerlink-color;
   display: inline-block;
-  // padding-top: 32px;
-  // padding-bottom: 32px;
+
   position: relative;
 
   @media screen and (max-width: 767px) {
     // margin-bottom: 52px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 
   &:hover,
@@ -79,7 +89,7 @@
 
 .item-nav {
   @media screen and (max-width: 767px) {
-    margin-bottom: 52px;
+    // margin-bottom: 52px;
   }
 
   @media screen and (min-width: 768px) {
@@ -96,7 +106,6 @@
 .current {
   color: $accent-color;
   position: relative;
-
   &:after {
     content: "";
     position: absolute;
