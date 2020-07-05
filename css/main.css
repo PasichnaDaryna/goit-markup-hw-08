@@ -1730,8 +1730,9 @@ svg:focus .icon-cross {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-content {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
