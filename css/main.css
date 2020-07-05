@@ -1249,6 +1249,7 @@ svg:focus .icon-cross {
 .social-option {
   width: 44px;
   height: 44px;
+  border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1266,8 +1267,8 @@ svg:focus .icon-cross {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-option .social-option .icon-social {
-  --color5: $social-color;
+.social-option.social-option .icon-social {
+  fill: #afb1b8;
 }
 
 .social-option:hover, .social-option:focus {
@@ -1279,10 +1280,6 @@ svg:focus .icon-cross {
 .social-option:hover,
 .social-option:focus .icon-social {
   --color5: $bg-color;
-}
-
-.icon-social {
-  padding: 12px;
 }
 
 .client-list {
