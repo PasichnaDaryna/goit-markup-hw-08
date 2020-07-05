@@ -752,7 +752,19 @@ h3 {
   display: none;
 }
 
-.menu-button:hover.icon-menu {
+svg:hover .icon-menu {
+  --color1: $accent-color;
+}
+
+svg:focus .icon-menu {
+  --color1: $accent-color;
+}
+
+svg:hover .icon-cross {
+  fill: #2196f3;
+}
+
+svg:focus .icon-cross {
   fill: #2196f3;
 }
 
@@ -1445,7 +1457,7 @@ h3 {
 
 .disclaimer {
   display: block;
-  width: 448px;
+  width: 100%;
   text-align: center;
   font-style: normal;
   line-height: 1.15;

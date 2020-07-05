@@ -30,7 +30,17 @@
   display: none;
 }
 
-.menu-button:hover.icon-menu {
+svg:hover .icon-menu {
+  --color1: $accent-color;
+}
+svg:focus .icon-menu {
+  --color1: $accent-color;
+}
+
+svg:hover .icon-cross {
+  fill: $accent-color;
+}
+svg:focus .icon-cross {
   fill: $accent-color;
 }
 
