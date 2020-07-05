@@ -95,6 +95,10 @@
   .close-button:focus & {
     fill: $accent-color;
   }
+
+  .close-button:hover & {
+    fill: $accent-color;
+  }
 }
 
 .disclaimer {

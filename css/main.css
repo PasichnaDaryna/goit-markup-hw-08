@@ -1455,6 +1455,10 @@ svg:focus .icon-cross {
   fill: #2196f3;
 }
 
+.close-button:hover .close-icon {
+  fill: #2196f3;
+}
+
 .disclaimer {
   display: block;
   width: 100%;
