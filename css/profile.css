@@ -279,6 +279,11 @@ a {
   margin: 0;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -1114,6 +1119,7 @@ h3 {
 .image-portfolio {
   display: block;
   max-width: 100%;
+  height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1199,6 +1205,9 @@ h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1260,32 +1269,19 @@ h3 {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .member-photo {
-    max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .member-photo {
-    max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .member-photo {
-    max-width: 100%;
-    height: 260px;
-  }
+.member-photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .member-name {
   text-align: center;
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 767px) {
   .member-name {
-    margin-top: 30px;
     margin-bottom: 10px;
   }
 }
