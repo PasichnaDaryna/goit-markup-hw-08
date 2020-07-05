@@ -42,6 +42,10 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: row;
+
+    .header-contact + .header-contact {
+      margin-left: 50px;
+    }
   }
 }
 .break {

@@ -371,13 +371,13 @@ h3 {
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 1199px;
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1600px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -607,6 +607,9 @@ h3 {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .contacts .header-contact + .header-contact {
+    margin-left: 50px;
+  }
 }
 
 .break {
@@ -789,11 +792,6 @@ h3 {
   }
 }
 
-.section {
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
-
 @media screen and (max-width: 767px) {
   .section {
     padding-bottom: 60px;
@@ -801,10 +799,17 @@ h3 {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .section {
     padding-bottom: 60px;
     padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-bottom: 94px;
+    padding-top: 94px;
   }
 }
 
@@ -863,6 +868,9 @@ h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .contacts .header-contact + .header-contact {
+    margin-left: 50px;
   }
 }
 
@@ -992,13 +1000,14 @@ h3 {
 
 .list-portfolio {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: -15px;
 }
 
 @media screen and (max-width: 767px) {
   .list-portfolio {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1009,6 +1018,17 @@ h3 {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .list-portfolio {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .list-portfolio {
     display: -webkit-box;
@@ -1016,9 +1036,10 @@ h3 {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -1057,28 +1078,20 @@ h3 {
 @media screen and (max-width: 767px) {
   .portfolio-block {
     width: 100%;
-    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio-block {
-    -ms-flex-preferred-size: calc((100%-30px) / 2);
-        flex-basis: calc((100%-30px) / 2);
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .portfolio-block {
-    width: calc((100% - 60px) / 3);
-    margin-right: 30px;
-    margin-bottom: 30px;
-  }
-  .portfolio-block:nth-last-child(-n + 3) {
-    margin-bottom: 0;
-  }
-  .portfolio-block:nth-child(3n) {
-    margin-right: 0;
+    width: calc((100% - 90px) / 3);
+    margin: 15px;
   }
 }
 
@@ -1249,7 +1262,7 @@ h3 {
 
 @media screen and (max-width: 767px) {
   .member-photo {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -1261,7 +1274,7 @@ h3 {
 
 @media screen and (min-width: 1200px) {
   .member-photo {
-    width: 270px;
+    width: 100%;
     height: 260px;
   }
 }
@@ -1455,18 +1468,6 @@ h3 {
   margin-bottom: 8px;
 }
 
-@media screen and (max-width: 767px) {
-  .kyiv-address {
-    margin-top: 20px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .kyiv-address {
-    margin-top: 20px;
-  }
-}
-
 .tel-email {
   display: block;
   color: rgba(255, 255, 255, 0.4);
@@ -1647,8 +1648,10 @@ h3 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    text-align: center;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 60px;
   }
 }
 
