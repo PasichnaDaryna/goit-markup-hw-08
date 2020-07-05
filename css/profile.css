@@ -317,14 +317,14 @@ h3 {
   display: inline-block;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .logo-link {
     margin-bottom: 16px;
     margin-top: 16px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .logo-link {
     margin-bottom: 26px;
     margin-top: 26px;
@@ -344,6 +344,12 @@ h3 {
   font-family: Raleway, sans-serif, sans-serif;
   font-style: normal;
   font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    font-size: 24px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -386,15 +392,15 @@ h3 {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
-    width: 768px;
+    max-width: 1199px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -497,7 +503,7 @@ h3 {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .item-nav {
     margin-right: 0px;
   }
@@ -778,7 +784,7 @@ svg:focus .icon-cross {
           align-items: center;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .for-burger {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1279,21 +1285,23 @@ svg:focus .icon-cross {
 
 @media screen and (max-width: 767px) {
   .member {
-    width: 100%;
+    max-width: 100%;
     margin: 15px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .member {
-    width: calc((100% - 2 * 30px) / 2);
+    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
+        flex-basis: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .member {
-    width: calc((100% - 4 * 30px) / 4);
+    -ms-flex-preferred-size: calc((100% - 4 * 30px) / 4);
+        flex-basis: calc((100% - 4 * 30px) / 4);
     margin: 15px;
   }
 }
@@ -1339,7 +1347,6 @@ svg:focus .icon-cross {
 .social-option {
   width: 44px;
   height: 44px;
-  border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1370,6 +1377,10 @@ svg:focus .icon-cross {
 .social-option:hover,
 .social-option:focus .icon-social {
   --color5: $bg-color;
+}
+
+.icon-social {
+  padding: 12px;
 }
 
 .footer {
@@ -1633,6 +1644,10 @@ svg:focus .icon-cross {
     height: 50px;
     margin-left: 12px;
   }
+}
+
+.subscribe-svg {
+  margin-left: 10px;
 }
 
 .join {
