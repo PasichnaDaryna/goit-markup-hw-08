@@ -732,14 +732,6 @@ h3 {
   outline: none;
 }
 
-@media screen and (max-width: 767px) {
-  .menu-button {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .menu-button {
     display: none;
