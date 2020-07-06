@@ -7,6 +7,10 @@
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 100;
   overflow-y: scroll;
+
+  @media screen and (max-width: 767px) {
+    padding: 50px 30px;
+  }
 }
 
 .is-hidden {
