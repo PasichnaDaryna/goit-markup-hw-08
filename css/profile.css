@@ -1412,11 +1412,11 @@ svg:focus .icon-cross {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-content {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    max-width: 100%;
   }
 }
 
@@ -1463,6 +1463,8 @@ svg:focus .icon-cross {
             flex-direction: column;
     text-align: center;
     margin-bottom: 60x;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
   }
 }
 
@@ -1521,6 +1523,13 @@ svg:focus .icon-cross {
 @media screen and (max-width: 767px) {
   .footer-social {
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) and (max-width: 1199px) {
+  .footer-social {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
   }
 }
 
@@ -1684,7 +1693,7 @@ svg:focus .icon-cross {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-subscribe {
-    display: inline-block;
+    display: block;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

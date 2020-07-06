@@ -6,13 +6,15 @@
   display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
+
   @media screen and (max-width: 767px) {
     flex-direction: column;
     justify-content: center;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
+    max-width: 100%;
   }
 
   @media screen and (min-width: 1200px) {
@@ -38,6 +40,7 @@
     flex-direction: column;
     text-align: center;
     margin-bottom: 60x;
+    flex-basis: 50%;
   }
 
   @media screen and (min-width: 1200px) {
@@ -101,6 +104,10 @@
 .footer-social {
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
+  }
+
+  @media screen and (max-width: 768px) and (max-width: 1199px) {
+    flex-basis: 50%;
   }
 }
 
@@ -229,14 +236,20 @@
 }
 .footer-subscribe {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: inline-block;
+    display: block;
     align-items: center;
     text-align: center;
 
     margin-right: auto;
     margin-left: auto;
     margin-top: 60px;
-  }
+
+    
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    flex-basis: 100%;}
+
+
 }
 .email-footer {
   display: inline-block;
@@ -249,12 +262,13 @@
   outline: none;
 
   @media screen and (max-width: 767px) {
-    width: 100%;
+    flex-basis: 100%;
     margin-bottom: 20px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 100%;
+    flex-basis: 100%;
     margin-bottom: 20px;
+
   }
   @media screen and (min-width: 1200px) {
     min-width: 310px;
