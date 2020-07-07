@@ -917,6 +917,12 @@ svg:focus .icon-cross {
           justify-content: center;
 }
 
+@media screen and (max-width: 767px) {
+  .adv-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .adv-item {
     max-width: calc((100% - 2 * 30px) / 2);
