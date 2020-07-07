@@ -21,6 +21,10 @@
 }
 
 .team-list {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  justify-content: center;
   margin: -15px;
   @media screen and (max-width: 767px) {
     display: flex;

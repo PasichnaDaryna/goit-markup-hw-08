@@ -1162,6 +1162,18 @@ svg:focus .icon-cross {
   padding-right: auto;
 }
 
+.team-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: -15px;
+}
+
 @media screen and (max-width: 767px) {
   .team-list {
     display: -webkit-box;
@@ -1211,7 +1223,6 @@ svg:focus .icon-cross {
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  margin: -15px;
 }
 
 @media screen and (max-width: 767px) {
