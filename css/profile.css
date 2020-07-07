@@ -728,7 +728,7 @@ svg:focus .icon-cross {
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .for-burger {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -750,6 +750,8 @@ svg:focus .icon-cross {
   .menu-container {
     display: none;
     position: absolute;
+    background-color: #ffffff;
+    padding: 40px;
     top: 100%;
     left: 0;
     width: 100%;

@@ -45,7 +45,7 @@ svg:focus .icon-cross {
     align-items: center;
   }
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,9 +54,12 @@ svg:focus .icon-cross {
 
 .menu-container {
   text-align: center;
+
   @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
+    background-color: $bg-color;
+    padding: 40px;
     top: 100%;
     left: 0;
     width: 100%;

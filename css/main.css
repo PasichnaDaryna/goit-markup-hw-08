@@ -749,7 +749,7 @@ svg:focus .icon-cross {
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .for-burger {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -771,6 +771,8 @@ svg:focus .icon-cross {
   .menu-container {
     display: none;
     position: absolute;
+    background-color: #ffffff;
+    padding: 40px;
     top: 100%;
     left: 0;
     width: 100%;
@@ -1345,6 +1347,9 @@ svg:focus .icon-cross {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   top: 50%;
   left: 50%;
   padding: 40px;
@@ -1364,11 +1369,6 @@ svg:focus .icon-cross {
 
 @media screen and (max-width: 767px) {
   .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
     max-width: 500px;
     width: 100%;
   }
