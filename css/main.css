@@ -889,6 +889,12 @@ svg:focus .icon-cross {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-title {
+    font-size: 26px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero-title {
     font-size: 44px;
@@ -1397,7 +1403,19 @@ svg:focus .icon-cross {
 
 @media screen and (max-width: 767px) {
   .backdrop {
-    padding: 50px 30px;
+    padding: 93px 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .backdrop {
+    padding: 159px 208px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .backdrop {
+    padding: 222px 536px;
   }
 }
 
@@ -1440,7 +1458,7 @@ svg:focus .icon-cross {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    max-width: 450px;
+    max-width: 500px;
     width: 100%;
   }
 }
@@ -1472,7 +1490,7 @@ svg:focus .icon-cross {
 
 @media screen and (min-width: 1200px) {
   .form-field {
-    max-width: 448px;
+    max-width: 100%;
   }
 }
 
@@ -1664,20 +1682,37 @@ svg:focus .icon-cross {
   cursor: pointer;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  width: 400px;
+  max-width: 100%;
 }
 
 .iagree {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
-  font-size: 14px;
   font-style: normal;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .iagree {
+    font-size: 12px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .iagree {
+    font-size: 14px;
+  }
 }
 
 .checkbox {
@@ -1713,6 +1748,7 @@ svg:focus .icon-cross {
 .terms-link {
   color: #2196f3;
   text-decoration: underline;
+  display: inline-block;
 }
 
 .send-form {

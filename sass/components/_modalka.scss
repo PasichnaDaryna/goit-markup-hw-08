@@ -9,10 +9,17 @@
   overflow-y: scroll;
 
   @media screen and (max-width: 767px) {
-    padding: 50px 30px;
+    padding: 93px 15px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 159px 208px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 222px 536px;
   }
 }
-
 .is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -42,7 +49,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 450px;
+    max-width: 500px;
     width: 100%;
   }
   @media screen and (min-width: 1200px) {
@@ -63,7 +70,7 @@
       max-width: 100%;
     }
     @media screen and (min-width: 1200px) {
-      max-width: 448px;
+      max-width: 100%;
     }
   }
 }
@@ -227,18 +234,29 @@
     align-items: center;
     cursor: pointer;
     flex-wrap: nowrap;
-    width: 400px;
+    max-width: 100%;
   }
 }
 
 .iagree {
   display: flex;
+  justify-content: stretch;
   flex-wrap: nowrap;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $text-color;
-  font-size: 14px;
+
   font-style: normal;
+  max-width: 100%;
+
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+    flex-wrap: nowrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 .checkbox {
   position: absolute;
@@ -274,6 +292,7 @@
 .terms-link {
   color: $accent-color;
   text-decoration: underline;
+  display: inline-block;
 }
 
 // submit button
