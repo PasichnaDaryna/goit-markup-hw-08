@@ -54,7 +54,7 @@
   display: inline-block;
   border: 1px solid transparent;
   border-radius: 6px;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   padding: 10px 32px;
   color: $bg-color;

@@ -84,7 +84,7 @@
 
     <main>
        <section class="section-hero">
-        <div class="overlay-image">
+        
           <h1 class="hero-title">
             эффективные решения <br />
             для вашего бизнеса
@@ -92,90 +92,9 @@
           <button class="order-button" data-open-modal>
             Заказать услугу
           </button>
-        </div>
+        
 
-        <div class="backdrop is-hidden" data-backdrop>
-          <div class="modal">
-            <form action class="form">
-              <b class="disclaimer">Оставьте свои данные, мы вам перезвоним!</b>
-
-              <div class="form-field">
-                <input class="field" type="text" id="name" placeholder=" " />
-                <label class="form-label" for="name">Имя</label>
-                <svg class="icohead" width="12" height="12">
-                  <use href="./img/symbol-defs.svg#icon-iconhead"></use>
-                </svg>
-              </div>
-
-              <div class="form-field">
-                <input
-                  class="field"
-                  type="tel"
-                  name="telephone"
-                  placeholder=" "
-                />
-                <label class="form-label">Телефон</label>
-                <svg class="icohead" width="13" height="13">
-                  <use href="./img/symbol-defs.svg#icon-iconcall"></use>
-                </svg>
-              </div>
-              <div class="form-field">
-                <input
-                  class="field"
-                  type="email"
-                  name="email"
-                  placeholder=" "
-                />
-                <label class="form-label">
-                  Почта
-                </label>
-                <svg class="icohead" width="15" height="12">
-                  <use href="./img/symbol-defs.svg#icon-iconmail "></use>
-                </svg>
-              </div>
-              <div class="text-field">
-                <textarea
-                  class="field comment"
-                  name="comment"
-                  id="comment"
-                  rows="8"
-                  placeholder=" "
-                ></textarea>
-                <span class="comment-label">Комментарий</span>
-              </div>
-
-              <div class="form-agreement">
-                <label for="agreement">
-                  <input
-                    class="checkbox"
-                    type="checkbox"
-                    name="agreement"
-                    id="agreement"
-                  />
-                  <svg class="checkbox-icon" width="15" height="15">
-                    <use href=""></use>
-                  </svg>
-                  <span class="iagree">
-                    Соглашаюсь с рассылкой и принимаю&nbsp;<a
-                      class="terms-link"
-                      href=""
-                    >
-                      Условия договора</a
-                    ></span
-                  >
-                </label>
-              </div>
-
-              <button class="send-form" type="submit">Отправить</button>
-
-              <button class="close-button" data-close-modal>
-                <svg class="close-icon" width="11" height="11">
-                  <use href="./img/symbol-defs.svg#icon-close"></use>
-                </svg>
-              </button>
-            </form>
-          </div>
-        </div>
+        
       </section> 
 
       <!-- central  -->
@@ -476,6 +395,62 @@
         </ul>
       </div>
     </section>  
+    <div class="backdrop is-hidden" data-backdrop>
+      <div class="modal">
+        <form action class="form">
+          <b class="disclaimer">Оставьте свои данные, мы вам перезвоним!</b>
+    
+          <div class="form-field">
+            <input class="field" type="text" id="name" placeholder=" " />
+            <label class="form-label" for="name">Имя</label>
+            <svg class="icohead" width="12" height="12">
+              <use href="./img/symbol-defs.svg#icon-iconhead"></use>
+            </svg>
+          </div>
+    
+          <div class="form-field">
+            <input class="field" type="tel" name="telephone" placeholder=" " />
+            <label class="form-label">Телефон</label>
+            <svg class="icohead" width="13" height="13">
+              <use href="./img/symbol-defs.svg#icon-iconcall"></use>
+            </svg>
+          </div>
+          <div class="form-field">
+            <input class="field" type="email" name="email" placeholder=" " />
+            <label class="form-label">
+              Почта
+            </label>
+            <svg class="icohead" width="15" height="12">
+              <use href="./img/symbol-defs.svg#icon-iconmail "></use>
+            </svg>
+          </div>
+          <div class="text-field">
+            <textarea class="field comment" name="comment" id="comment" rows="8" placeholder=" "></textarea>
+            <span class="comment-label">Комментарий</span>
+          </div>
+    
+          <div class="form-agreement">
+            <label for="agreement">
+              <input class="checkbox" type="checkbox" name="agreement" id="agreement" />
+              <svg class="checkbox-icon" width="15" height="15">
+                <use href=""></use>
+              </svg>
+              <span class="iagree">
+                Соглашаюсь с рассылкой и принимаю&nbsp;<a class="terms-link" href="">
+                  Условия договора</a></span>
+            </label>
+          </div>
+    
+          <button class="send-form" type="submit">Отправить</button>
+    
+          <button class="close-button" data-close-modal>
+            <svg class="close-icon" width="11" height="11">
+              <use href="./img/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
     </main>
 
     <footer class="footer">
