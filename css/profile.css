@@ -1644,8 +1644,6 @@ svg:focus .icon-cross {
   .button-join {
     display: block;
     min-width: 200px;
-    margin-left: auto;
-    margin-right: auto;
     padding: 10px 29px;
   }
 }
@@ -1684,6 +1682,17 @@ svg:focus .icon-cross {
   .join {
     text-align: center;
   }
+}
+
+.join-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) and (max-width: 1199px) {

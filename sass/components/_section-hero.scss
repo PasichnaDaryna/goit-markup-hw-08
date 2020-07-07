@@ -31,13 +31,18 @@
   padding-top: 200px;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 44px;
+
   line-height: 1.36;
   letter-spacing: 0.06em;
   color: $bg-color;
 
   @media screen and (max-width: 767px) {
     padding-top: 118px;
+    font-size: 26px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
   }
 }
 

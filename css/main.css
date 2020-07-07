@@ -854,7 +854,8 @@ svg:focus .icon-cross {
 }
 
 .overlay-image {
-  max-width: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   height: auto;
   margin-right: auto;
   margin-left: auto;
@@ -876,7 +877,6 @@ svg:focus .icon-cross {
   padding-top: 200px;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   color: #ffffff;
@@ -885,6 +885,13 @@ svg:focus .icon-cross {
 @media screen and (max-width: 767px) {
   .hero-title {
     padding-top: 118px;
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
   }
 }
 
@@ -1982,8 +1989,6 @@ svg:focus .icon-cross {
   .button-join {
     display: block;
     min-width: 200px;
-    margin-left: auto;
-    margin-right: auto;
     padding: 10px 29px;
   }
 }
@@ -2022,6 +2027,17 @@ svg:focus .icon-cross {
   .join {
     text-align: center;
   }
+}
+
+.join-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) and (max-width: 1199px) {
