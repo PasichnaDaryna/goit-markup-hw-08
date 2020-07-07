@@ -404,7 +404,7 @@ h3 {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header-content {
     position: relative;
     max-height: 60px;
@@ -740,7 +740,6 @@ svg:focus .icon-cross {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: relative;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -750,6 +749,24 @@ svg:focus .icon-cross {
   }
 }
 
+@media screen and (min-width: 767px) {
+  .for-burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.menu-container {
+  text-align: center;
+}
+
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
@@ -757,10 +774,6 @@ svg:focus .icon-cross {
     top: 100%;
     left: 0;
     width: 100%;
-    z-index: 99999999;
-    background-color: #ffffff;
-    text-align: center;
-    font-size: 20px;
   }
   .menu-container.is-open {
     display: block;
@@ -782,10 +795,6 @@ svg:focus .icon-cross {
 }
 
 .section-hero {
-  text-align: center;
-}
-
-.section-hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -799,6 +808,7 @@ svg:focus .icon-cross {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   height: 400px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../img/Headerimg.png);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../img/Headerimg.png);
@@ -808,7 +818,7 @@ svg:focus .icon-cross {
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .section-hero .overlay {
+  .section-hero .section-hero {
     background-image: url("headerimg@2x.png");
   }
 }
@@ -854,12 +864,6 @@ svg:focus .icon-cross {
   line-height: 1.87;
   font-weight: bold;
   outline: none;
-}
-
-@media screen and (min-width: 1199px) {
-  .order-button {
-    margin-bottom: 200px;
-  }
 }
 
 .advantage-list {
@@ -947,7 +951,7 @@ svg:focus .icon-cross {
 
 @media screen and (min-width: 1200px) {
   .plus {
-    max-width: 270px;
+    min-width: 270px;
     height: 120px;
   }
 }
@@ -1112,8 +1116,6 @@ svg:focus .icon-cross {
 
 .member {
   display: block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);

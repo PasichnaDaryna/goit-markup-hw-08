@@ -1,12 +1,9 @@
 .section-hero {
-  text-align: center;
-}
-
-.section-hero {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   height: 400px;
   background-image: linear-gradient(
       to right,
@@ -21,7 +18,7 @@
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    .overlay {
+    .section-hero {
       background-image: url("headerimg@2x.png");
     }
   }
@@ -68,6 +65,5 @@
   }
 
   @media screen and (min-width: 1199px) {
-    margin-bottom: 200px;
   }
 }
