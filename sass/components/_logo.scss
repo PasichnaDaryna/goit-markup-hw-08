@@ -1,32 +1,24 @@
-// $basic-font: Roboto, sans-serif;
-// $logo-font: Raleway, sans-serif;
-
-// $bg-color: #ffffff;
-// $text-color: #757575;
-// $headerlink-color: #212121;
-// $accent-color: #2196f3;
-// $footerbg_color: #2f303a;
 .logo-link {
   display: inline-block;
 
-  @media screen and (max-width: 767px) {
-    margin-bottom: 16px;
-    margin-top: 16px;
-  }
+  // @media screen and (max-width: 767px) {
+  //   margin-bottom: 16px;
+  //   margin-top: 16px;
+  // }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-bottom: 26px;
-    margin-top: 26px;
-  }
+  // @media screen and (min-width: 768px) and (max-width: 1199px) {
+  //   margin-bottom: 26px;
+  //   margin-top: 26px;
+  // }
 
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 24px;
-    margin-top: 25px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   margin-bottom: 24px;
+  //   margin-top: 25px;
+  // }
 }
 
 .logo {
-  display: block;
+  display: inline-block;
   color: $accent-color;
   font-family: $logo-font, sans-serif;
   font-style: normal;

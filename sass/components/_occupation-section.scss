@@ -27,17 +27,14 @@
   flex-wrap: nowrap;
   list-style: none;
   justify-content: center;
+  margin: -15px;
 }
 
 .work-item {
   position: relative;
-  margin-right: 30px;
-  width: calc((100% - 60px) / 3);
+  margin: 15px;
+  width: calc((100% - 90px) / 3);
   display: block;
-
-  &:last-child {
-    margin-right: 0;
-  }
 }
 
 .occupation-img {
