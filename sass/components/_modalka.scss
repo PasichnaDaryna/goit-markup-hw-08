@@ -27,6 +27,7 @@
 
 .modal {
   background-color: $bg-color;
+  position: relative;
   @media screen and (min-width: 768px) {
     z-index: 9999;
     position: absolute;

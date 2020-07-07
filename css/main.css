@@ -1339,6 +1339,7 @@ svg:focus .icon-cross {
 
 .modal {
   background-color: #ffffff;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
