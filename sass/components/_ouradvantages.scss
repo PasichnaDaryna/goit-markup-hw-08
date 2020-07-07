@@ -45,6 +45,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 4px;
 
   @media screen and (max-width: 767px) {
     height: 120px;
@@ -69,6 +70,7 @@
 
 .section-title {
   text-align: left;
+  margin-bottom: 10px;
 
   @media screen and (max-width: 767px) {
     text-align: center;
@@ -85,7 +87,7 @@
   line-height: 1.7;
 
   letter-spacing: 0.03em;
-  margin-top: 10px;
+  margin-top: 0;
   margin-bottom: 0px;
 
   @media screen and (max-width: 767px) {
