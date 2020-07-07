@@ -72,30 +72,6 @@
 //   }
 // }
 
-// .close-button {
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   transform: translate(-8px, 8px);
-
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 30px;
-//   height: 30px;
-//   border-radius: 25px;
-//   border-style: none;
-//   background-color: $bg-color;
-//   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-//     0px 1px 3px rgba(0, 0, 0, 0.12);
-//   cursor: pointer;
-//   outline: none;
-
-//   &:focus {
-//     border: 1px solid $accent-color;
-//   }
-// }
-
 // .close-icon {
 //   width: 11px;
 //   height: 11px;
@@ -319,6 +295,10 @@
 //     cursor: pointer;
 //   }
 // }
+// body.modal-open {
+//   overflow: hidden;
+// }
+
 .backDrop {
   position: fixed;
   top: 0;
@@ -352,11 +332,11 @@
   padding-right: 40px;
   padding-bottom: 40px;
   padding-left: 40px;
-  background-color: $primaryBackgroundColor;
+  background-color: $bg-color;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  .backDrop.backDrop--hidden & {
+  .backDrop .is-hidden & {
     transform: scale(1.1);
     @media screen and (min-width: $tablet) {
       transform: translate(-50%, -50%) scale(1.1);
@@ -404,6 +384,7 @@
   padding-left: 45px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline-style: none;
 }
 .request__label {
   position: absolute;
@@ -415,7 +396,7 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
-  color: $secondaryTextColor;
+  color: $text-color;
   .request__field:focus-within > &,
   .request__input:not(:placeholder-shown) + & {
     transform: translateY(-40px) translateX(-25px);
@@ -423,18 +404,19 @@
     line-height: 1.17;
   }
   .request__field:focus-within > & {
-    color: $accentColor;
+    color: $accent-color;
   }
 }
 .request__icon {
   position: absolute;
   top: 50%;
   left: 19px;
+
   transform: translateY(-50%);
-  fill: $primaryTextColor;
+  fill: $headerlink-color;
   transition: fill 250ms $cubic;
   .request__field:focus-within > & {
-    fill: $accentColor;
+    fill: $accent-color;
   }
 }
 .request__textarea {
@@ -447,6 +429,7 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
+  outline-style: none;
 }
 .request__textareaField {
   position: relative;
@@ -461,7 +444,7 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
-  color: $secondaryTextColor;
+  color: $text-color;
   transition: transform 250ms $cubic, color 250ms $cubic, font-size 250ms $cubic,
     line-height 250ms $cubic;
   .request__textareaField:focus-within > &,
@@ -471,7 +454,7 @@
     line-height: 1.17;
   }
   .request__textareaField:focus-within > & {
-    color: $accentColor;
+    color: $accent-color;
   }
 }
 /* Оформление CHECKBOX */
@@ -488,9 +471,9 @@
   border: 2px solid #212121;
   border-radius: 2px;
   .request__checkboxInput:checked + & {
-    border-color: $accentColor;
-    background-image: url(../images/icon-check.svg);
-    background-color: $accentColor;
+    border-color: $accent-color;
+    background-image: url(../img/iconcheck.svg);
+    background-color: $accent-color;
     background-size: contain;
     background-origin: border-box;
   }
@@ -499,14 +482,14 @@
   margin-right: 5px;
   font-size: 11px;
   line-height: 1.17;
-  color: $secondaryTextColor;
+  color: $text-color;
   @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: 1.7;
   }
 }
 .request__checkboxLink {
-  color: $accentColor;
+  color: $accent-color;
   font-size: 11px;
   line-height: 1.17;
   @media screen and (min-width: $desktop) {
@@ -519,18 +502,62 @@
   position: absolute;
   top: 0;
   right: 0;
-  transform: translateX(-8px) translateY(8px);
-  @include centeredFlex();
+  transform: translate(-8px, 8px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  background: $primaryBackgroundColor;
-  fill: #000;
-  transition: border-color 250ms $cubic, fill 250ms $cubic;
+  border-style: none;
+  background-color: $bg-color;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  outline: none;
+
+  &:hover .iconclosemodal {
+    fill: $accent-color;
+  }
+
   &:hover,
   &:focus {
-    border-color: $accentColor;
-    fill: $accentColor;
+    border: 1px solid $accent-color;
   }
+}
+
+.send-form {
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 55px;
+  margin-left: auto;
+  margin-right: auto;
+  color: $bg-color;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-style: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  outline-style: none;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
