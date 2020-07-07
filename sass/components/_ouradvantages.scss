@@ -1,21 +1,16 @@
 .advantage-list {
-  display: flex;
   text-decoration: none;
   list-style: none;
   justify-content: center;
-  margin: -15px;
-
-  @media screen and (max-width: 767px) {
-    display: flex;
-    flex-direction: column;
-  }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
 
   @media screen and (min-width: 1200px) {
+    display: flex;
     flex-wrap: nowrap;
   }
 }
