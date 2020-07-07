@@ -388,19 +388,19 @@ h3 {
 
 @media screen and (max-width: 767px) {
   .container {
-    width: 767px;
+    max-width: 767px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
-    width: 1199px;
+    max-width: 1199px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    min-width: 1200;
   }
 }
 
@@ -427,22 +427,6 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-@media screen and (max-width: 767px) {
-  .menu-container {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    text-align: center;
-    background-color: #fff;
-    border-top: 1px solid #ececec;
-  }
 }
 
 .navigation {
@@ -513,13 +497,12 @@ h3 {
   line-height: 1.14;
   color: #212121;
   display: inline-block;
-  position: relative;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .nav-option {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
