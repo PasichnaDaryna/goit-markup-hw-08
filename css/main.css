@@ -865,6 +865,12 @@ svg:focus .icon-cross {
   background-size: cover;
 }
 
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .overlay-image .overlay {
+    background-image: url("headerimg@2x.png");
+  }
+}
+
 .hero-title {
   margin-bottom: 56px;
   padding-top: 200px;
@@ -1955,6 +1961,7 @@ svg:focus .icon-cross {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 50px;
   padding: 10px 32px;
   border-radius: 4px;
   color: #ffffff;
@@ -2031,6 +2038,16 @@ svg:focus .icon-cross {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .footer-subscribe {
+    display: block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-subscribe {
     display: block;
@@ -2061,6 +2078,7 @@ svg:focus .icon-cross {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     margin-bottom: 20px;
+    max-width: 450px;
   }
 }
 

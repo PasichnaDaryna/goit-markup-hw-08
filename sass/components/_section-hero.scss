@@ -3,7 +3,7 @@
 }
 
 .overlay-image {
-  max-width: 100%;
+  flex-basis: 100%;
   height: auto;
   margin-right: auto;
   margin-left: auto;
@@ -16,6 +16,14 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .overlay {
+      background-image: url("headerimg@2x.png");
+    }
+  }
 }
 
 .hero-title {
