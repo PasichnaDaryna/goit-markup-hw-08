@@ -1077,6 +1077,7 @@ svg:focus .icon-cross {
   .portfolio-block {
     -ms-flex-preferred-size: calc((100% - 3 * 30px) / 3);
         flex-basis: calc((100% - 3 * 30px) / 3);
+    max-width: 404px;
     margin: 15px;
   }
 }

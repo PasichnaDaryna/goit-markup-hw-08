@@ -4,7 +4,6 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: 400px;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.8),
@@ -21,6 +20,19 @@
     .section-hero {
       background-image: url("headerimg@2x.png");
     }
+  }
+
+  @media screen and (max-width: 767px) {
+    height: 400px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    height: 400px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1200px;
+    height: 600px;
   }
 }
 

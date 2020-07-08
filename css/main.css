@@ -812,7 +812,6 @@ svg:focus .icon-cross {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  height: 400px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../img/Headerimg.png);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../img/Headerimg.png);
   background-repeat: no-repeat;
@@ -823,6 +822,25 @@ svg:focus .icon-cross {
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .section-hero .section-hero {
     background-image: url("headerimg@2x.png");
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-hero {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-hero {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-hero {
+    max-width: 1200px;
+    height: 600px;
   }
 }
 
@@ -1536,6 +1554,7 @@ svg:focus .icon-cross {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 30px;
+  max-width: 100%;
 }
 
 .request__checkboxIcon {
@@ -1543,6 +1562,8 @@ svg:focus .icon-cross {
   width: 16px;
   height: 15px;
   margin-right: 8px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   border: 2px solid #212121;
   border-radius: 2px;
 }
@@ -1560,6 +1581,12 @@ svg:focus .icon-cross {
   font-size: 11px;
   line-height: 1.17;
   color: #757575;
+}
+
+@media screen and (max-width: 767px) {
+  .request__checkboxLabel {
+    max-width: 100%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
