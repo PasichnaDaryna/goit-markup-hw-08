@@ -839,7 +839,7 @@ svg:focus .icon-cross {
 
 @media screen and (min-width: 1200px) {
   .section-hero {
-    max-width: 1200px;
+    max-width: 1600px;
     height: 600px;
   }
 }
@@ -1597,6 +1597,7 @@ svg:focus .icon-cross {
 }
 
 .request__checkboxLink {
+  display: inline;
   color: #2196f3;
   font-size: 11px;
   line-height: 1.17;
