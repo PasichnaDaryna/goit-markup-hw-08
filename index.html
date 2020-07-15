@@ -160,15 +160,15 @@
         <h2 class="central-title">Чем мы занимаемся?</h2>
         <ul class="list-work">
           <li class="work-item">
-            <img class="occupation-img" src="./img/occupation1.jpg" alt="desktop apps" />
+            <img class="occupation-img" src="./img/occupation1.jpg" srcset="./img/occupation1@x2.jpg" alt="desktop apps" />
             <h3 class="products-white">Десктопные приложения</h3>
           </li>
           <li class="work-item">
-            <img class="occupation-img" src="./img/occupation2.jpg" alt="mobile apps" />
+            <img class="occupation-img" src="./img/occupation2.jpg" srcset="./img/occupation2@2x.jpg"  alt="mobile apps" />
             <h3 class="products-white">Мобильные приложения</h3>
           </li>
           <li class="work-item">
-            <img class="occupation-img" src="./img/occupation3.jpg" alt="designer's solution" />
+            <img class="occupation-img" src="./img/occupation3.jpg" srcset="./img/occupation3@2x.jpg" alt="designer's solution" />
             <h3 class="products-white">Дизайнерские решения</h3>
           </li>
         </ul>
@@ -510,8 +510,10 @@
         <label class="request__checkbox">
           <input class="request__checkboxInput visuallyHidden" type="checkbox" name="agreement" value="true" />
           <span class="request__checkboxIcon"></span>
-          <span class="request__checkboxLabel">Соглашаюсь с рассылкой и принимаю&nbsp;</span>
+          <div class="checkbox-agreelabel">
+            <span class="request__checkboxLabel">Соглашаюсь с рассылкой и принимаю&nbsp;</span>
           <a href="" class="request__checkboxLink">Условия договора</a>
+        </div>
         </label>
         <button type="submit" class="send-form">Отправить</button>
         <button type="button" class="buttonClose" data-modal-close>

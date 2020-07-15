@@ -361,8 +361,6 @@ h3 {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 @media screen and (max-width: 767px) {
@@ -379,7 +377,9 @@ h3 {
 
 @media screen and (min-width: 1200px) {
   .container {
-    min-width: 1200;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1100,7 +1100,7 @@ svg:focus .icon-cross {
 
 .image-portfolio {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
